@@ -1,0 +1,20 @@
+#root{
+  grid-template-columns: 20% 80%;
+  display: grid;
+  --prim-color: #264e70;
+  color: white;
+  margin: -8px
+}
+button{
+  background: #ef6c57;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font:normal bold 18px "open sans", sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+button:hover{
+  transition: all 0.3s;
+  background: #9c3829;
+}
