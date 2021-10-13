@@ -14,7 +14,7 @@
 
 ### Description
 
-- TODO
+Full-stack bug management project with React frontend and Node.js backend. Created using the MVC software design pattern.
 
 ---
 
@@ -26,6 +26,8 @@
 
 ### What I Learned
 
-- TODO
+- How to incorporate the MVC software design pattern into a full stack project.
+- How to use React to create user interface components.
+- How to use Node.js to create the backend for a web application.
 
 [Back To The Top](#bug-management-system)
