@@ -14,28 +14,29 @@ export default (props)=>{
     return(
         <div className='bug-create'>
             {props.title =="Edit Bug" &&<button className='close-btn' onClick={props.close}>Close</button>}
-            <h1>{props.title}</h1>
+            <h1>Create Bug Record</h1>
             <form>
                 <label>Name:</label>
                 <input name='name' placeholder='Bug Name' required onChange={inputChanged} value={bugObject.name}></input>
                 <label>Details:</label>
-                <textarea name='details' placeholder='detailed decriptino of bug' required onChange={inputChanged} value={bugObject.details}></textarea>
+                <textarea name='details' placeholder='Description of bug' required onChange={inputChanged} value={bugObject.details}></textarea>
                 <label>Steps:</label>
-                <textarea name='steps' placeholder='steps to recreate bug' required  onChange={inputChanged} value={bugObject.steps}></textarea>
+                <textarea name='steps' placeholder='Steps to recreate bug' required  onChange={inputChanged} value={bugObject.steps}></textarea>
                 <label>Priority:</label>
                 <select name='priority' required onChange={inputChanged} value={bugObject.priority}>
                     <option value='1'>High</option>
                     <option value='2'>Mid</option>
                     <option value='3'>Low</option>
                 </select>
-                <label>Assigned</label>
+                <label>Assigned to:</label>
                 <select name='assigned' onChange={inputChanged} value={bugObject.assigned}>
-                    <option>John Smith</option>
+                    <option>Staff Member</option>
                 </select>
-                <label>Application Version:</label>
+                <label>App Version:</label>
                 <input name='version' placeholder='Application Version' onChange={inputChanged} value={bugObject.version}></input>
                 <button type='submit'>{props.title}</button>
             </form>
         </div>
     )
 }
+/*  {props.title} was in h1*/
