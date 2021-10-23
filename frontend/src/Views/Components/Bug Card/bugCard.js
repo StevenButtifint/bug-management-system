@@ -13,8 +13,8 @@ export default (props)=>{
     return(
         <div className='bug-card' onClick={Clicked} style={{color:color}}>
             <h2 className='name'>{name}</h2>
-            <h4 className='priority'>{level}</h4>
-            <h5 className='version'>{version}</h5>
+            <h4 className='priority'>Priority: {level}</h4>
+            <h5 className='version'>Version: {version}</h5>
         </div>
     )
 }
