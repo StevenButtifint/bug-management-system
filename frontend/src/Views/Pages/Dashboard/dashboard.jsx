@@ -3,6 +3,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import {useHistory} from 'react-router-dom'
 import {getBugs} from '../../../Controllers/Redux/bugSlice'
 import Card from '../../Components/Dashboard/card'
+import '../../../index.css'
 
 export default ()=>{
     const dispatch = useDispatch();
@@ -30,10 +31,12 @@ export default ()=>{
     }, [bugs == undefined])
 
     return(
-        <div className='page-container'>
-            <Card priority="1" count={highCount.length} clicked={redirect}/>
-            <Card priority="2" count={midCount.length} clicked={redirect}/>
-            <Card priority="3" count={lowCount.length} clicked={redirect}/>
+        <div className="pages-BG">
+            <div className='page-container'>
+                <Card priority="1" count={highCount.length} clicked={redirect}/>
+                <Card priority="2" count={midCount.length} clicked={redirect}/>
+                <Card priority="3" count={lowCount.length} clicked={redirect}/>
+            </div>
         </div>
     )
 }
