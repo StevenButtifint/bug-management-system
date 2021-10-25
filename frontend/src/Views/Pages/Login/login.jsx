@@ -27,10 +27,12 @@ export default () =>{
     return(
         <div className="loginBG">
             <form className='login-panel'>
-                <h1>Login:</h1>
-                <input name='name' placeholder='Name' onChange={inputChanged} value={formInput.name}></input>
+                <h3>Username</h3>
+                <input name='name' placeholder='Username' onChange={inputChanged} value={formInput.name}></input>
+                <h3>Password</h3>
                 <input name='password' type='password' placeholder='Password' onChange={inputChanged} value={formInput.password}></input>
-                <button type='submit' onClick={submit}>Login</button>
+                <button className='signup-button' type='submit' >Create Account</button>
+                <button className='login-button' type='submit' onClick={submit}>Login</button>
             </form>
         </div>
     )
