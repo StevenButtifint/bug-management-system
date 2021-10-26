@@ -4,19 +4,19 @@ const slice = createSlice({
     name:"auth",
     initialState: {
         admin: false,
-        loggedIn: false,
+        LoggedIn: false,
     },
     reducers:{
         signIn:(state, action)=>{
-            const {name, password} = action.payload;
-            state.loggedIn = true;
+            const {name,password} = action.payload;
+            state.LoggedIn = true;
             state.admin = true;
+            console.log("hello there");
         },
 
         signOut:(state)=>{
-            state.loggedIn = false;
+            state.LoggedIn = false;
             state.admin = false;
-
         },
 
         createUser:(state, action)=>{
@@ -29,4 +29,4 @@ const slice = createSlice({
 
 export default slice.reducer;
 
-export const {signIn, signOut, createUser} = slice.actions;
+export const {signIn,signOut,createUser} = slice.actions;
