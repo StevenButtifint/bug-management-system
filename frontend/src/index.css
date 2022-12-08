@@ -1,28 +1,48 @@
 #root{
   grid-template-columns: 20% 80%;
   display: grid;
-  --prim-color: #264e70;
+  --prim-color: #05386b;
+  --second-color: #5cdb95;
+  --third-color: #379683;
+
+  --application-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
   --card-color: #cae1ff;
   color: white;
   margin: -8px
 }
 button{
-  background: #ef6c57;
-  border-radius: 5px;
+  border-radius: 0px;
+  font-family: var(--application-font);
+  border: 0;
+  background: var(--second-color);
   padding: 5px 20px;
-  font:normal bold 18px "open sans", sans-serif;
   text-align: center;
   color: white;
   margin-bottom: 10px;
 }
 button:hover{
   transition: all 0.3s;
-  background: #9c3829;
+  background: var(--prim-color);
 }
 .page-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2vw;
   justify-content: center;
   grid-column: 2;
+  margin-top: 2%;
+}
+
+.pages-BG{
+  width: 80vw;
+  height: 100vh;
+  margin-left: 20vw;
+  background: url('../src/Images/backgrounds/page_background.jpg');
+  background-size: 85vw;
+  background-color: var(--second-color);
+  background-blend-mode: none;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  position: absolute;
 }
